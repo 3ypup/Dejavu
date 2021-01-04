@@ -22,8 +22,18 @@
 			<p2>Сделайте выбор</p2>
 			<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
 			  <div class="btn-group me-2" role="group" aria-label="First group">
+
+
+				<%= form_for :bridge, method: :put do |f| %> 
+			   
+				<p1> <%= f.check_box  :robo,  value: 2  %>  </p1><br/><br/>
 			    <button type="button" class="btn btn-success"> Вы принудительно выведете из строя центральный компьютер VIKI,воспользавшись нанитами.</button>
-			    <button type="button" class="btn btn-success"> Вы измените логический алгоритм VIKI, пставив в приоритет Три Закона Роботехники, что, возможно, приведет к частичным поломкам корабля.</button>
+			    <button type="button" class="btn btn-success"> Вы измените логический алгоритм VIKI, пставив в приоритет Три Закона Роботехники, что, возможно, приведет к частичным поломкам корабля.
+			    	<button class="button button-primary cta" type="submit">ОТПРАВИТЬ ОТЧЕТ</bu
+
+			    <%end%>
+
+			    </button>
 			  </div>
 		 	</div>
 		</div><br/>

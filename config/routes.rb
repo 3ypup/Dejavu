@@ -3,4 +3,6 @@ Rails.application.routes.draw do
 
   get "/" => "bridge#index"
   get "/robo" => "bridge#robo"
+
+  
 end
